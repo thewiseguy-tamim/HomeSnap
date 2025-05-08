@@ -3,7 +3,8 @@ import { Link, useNavigate } from "react-router-dom"; // ✅ Fixed import here
 import { useState } from "react";
 
 import ErrorAlert from "../../components/ErrorAlert";
-import useAuthContext from "../../hooks/useAuthContext";
+import useAuthContext from "../../Hooks/useAuthContext";
+
 
 
 const Register = () => {
