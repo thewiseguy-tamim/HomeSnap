@@ -2,15 +2,12 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import useAuthContext from '../Hooks/useAuthContext';
 import { LogOut } from 'lucide-react';
-
-// Import your cart context (create this if it doesn't exist)
-import useCartContext from '../Hooks/useCartContext'; // Hypothetical cart context
+import useCartContext from '../Hooks/useCartContext'; 
 
 const NavBar = () => {
   const { user, logoutUser } = useAuthContext();
-  const { cart } = useCartContext(); // Fetch cart data from context
+  const { cart } = useCartContext(); 
 
-  // Calculate item count and subtotal based on cart items
   const itemCount = cart?.items?.length || 0;
   const subtotal = cart?.items
     ? cart.items
