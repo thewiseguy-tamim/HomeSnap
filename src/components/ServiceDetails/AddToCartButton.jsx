@@ -11,7 +11,7 @@ const AddToCartButton = ({ service }) => {
     if (!service || !service.id) return;
     setIsAdding(true);
     try {
-      await addCartItem(service.id, 1); // Corrected function name and argument
+      await addCartItem(service.id, 1); 
       setIsAdded(true);
       setTimeout(() => {
         setIsAdded(false);

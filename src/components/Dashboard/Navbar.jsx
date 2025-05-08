@@ -1,10 +1,10 @@
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import useAuthContext from "../../Hooks/useAuthContext";
- // Import your auth hook
+
 
 const Navbar = ({ sidebarOpen }) => {
-  const { logoutUser } = useAuthContext(); // Get the logout function
+  const { logoutUser } = useAuthContext(); 
 
   return (
     <div className="navbar bg-base-100 border-b">

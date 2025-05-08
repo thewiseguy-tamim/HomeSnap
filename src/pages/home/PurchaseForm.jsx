@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import apiClient from '../../Services/api-client';
- // Import the axios instance
+
 
 const PurchaseForm = () => {
   const { serviceId } = useParams();

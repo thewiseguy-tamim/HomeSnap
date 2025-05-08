@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
-import useAuthContext from "../../../hooks/useAuthContext";
+import useAuthContext from "../../../Hooks/useAuthContext";
+
 
 const ProfileForm = ({ isEditing }) => {
   const { user, updateUserProfile } = useAuthContext();

@@ -1,11 +1,12 @@
 import { createContext } from "react";
-import useCart from "../Hooks/useCart";
+import useCartContext from "../Hooks/useCartContext";
+
 
 
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const cartValues = useCart();
+  const cartValues = useCartContext();
   return (
     <CartContext.Provider value={cartValues}>{children}</CartContext.Provider>
   );

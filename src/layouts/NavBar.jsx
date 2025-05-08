@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import useAuthContext from '../Hooks/useAuthContext';
-import { LogOut } from 'lucide-react';
-import useCartContext from '../Hooks/useCartContext'; 
+import useCartContext from '../Hooks/useCartContext';
+
 
 const NavBar = () => {
   const { user, logoutUser } = useAuthContext();
