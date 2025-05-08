@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import About from "../pages/Services/About";
-import Home from "../pages/home/Home";
+
 import MainLayout from "../layouts/MainLayout";
 import Shop from "../pages/home/Shop";
 import Login from "../pages/home/Login";
@@ -11,13 +11,12 @@ import ActivateAccount from "../components/Registration/ActivateAccount";
 import DashboardLayout from "../layouts/DashboardLayout";
 import Profile from "../pages/home/Profile";
 import ServiceDetail from "../pages/home/ServiceDetails";
-import Cart from "../pages/home/Cart";  // Added Cart import
+import Cart from "../pages/home/Cart";  
 import Orders from "../pages/home/Order";
 import PaymentSuccess from "../pages/home/PaymentSuccess";
 import PurchaseForm from "../pages/home/PurchaseForm";
+import Home from "../pages/home/home";
 
-
-// import AddProduct from "../pages/home/AddProduct";
 
 const AppRoutes = () => {
   return (
@@ -45,10 +44,10 @@ const AppRoutes = () => {
       >
         <Route index element={<Dashboard />} />
         <Route path="profile" element={<Profile />} />
-        <Route path="cart" element={<Cart />} />  {/* Cart route inside dashboard */}
+        <Route path="cart" element={<Cart />} />  
         <Route path="orders" element={<Orders />} />
         <Route path="payment/success" element={<PaymentSuccess />} />
-        {/* <Route path="products/add" element={<AddProduct />} /> */}
+      
       </Route>
     </Routes>
   );
