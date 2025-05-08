@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router'
 import './index.css'
 import AppRoutes from './routes/AppRoutes.jsx'
 import { AuthProvider } from './Context/AuthContext.jsx'
-import { CartProvider } from './Context/CartContext.jsx'
+import { CartProvider } from './context/CartContext.jsx'
 
 
 createRoot(document.getElementById('root')).render(
