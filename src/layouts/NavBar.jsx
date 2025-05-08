@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import useAuthContext from '../Hooks/useAuthContext';
+import useAuthContext from '../hooks/useAuthContext';
 import { LogOut } from 'lucide-react';
 
 // Import your cart context (create this if it doesn't exist)
-import useCartContext from '../Hooks/useCartContext'; // Hypothetical cart context
+import useCartContext from '../hooks/useCartContext'; // Hypothetical cart context
 
 const NavBar = () => {
   const { user, logoutUser } = useAuthContext();

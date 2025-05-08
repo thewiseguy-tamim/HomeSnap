@@ -3,7 +3,7 @@ import ServiceItem from "../ServicesSS/ServiceItem";
 import Pagination from "./Pagination";
 
 import FilterSection from "./FilterSection";
-import useFetchService from "../../Hooks/useFetchService";
+import useFetchService from "../../hooks/useFetchService";
 
 const ShopPage = () => {
   const [currentPage, setCurrentPage] = useState(1);

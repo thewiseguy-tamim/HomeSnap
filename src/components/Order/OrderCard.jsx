@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import useAuthContext from "../../Hooks/useAuthContext";
+import useAuthContext from "../../hooks/useAuthContext";
 import OrderTable from "./OrderTable";
 import authApiClient from "../../Services/auth-api-client";
 import Cookies from 'js-cookie';

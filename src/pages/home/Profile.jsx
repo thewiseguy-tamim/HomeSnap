@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
-
-import useAuth from "../../Hooks/useAuth";
 import PasswordChangeForm from "../../components/Dashboard/Profile/PasswordChangeForm";
 import ProfileButtons from "../../components/Dashboard/Profile/ProfileButtons";
+import useAuth from "../../hooks/useAuth";
+
 
 const Profile = () => {
   const { user, updateUserProfile, changePassword } = useAuth();

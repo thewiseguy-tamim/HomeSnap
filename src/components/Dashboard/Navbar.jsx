@@ -1,6 +1,6 @@
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import useAuthContext from "../../Hooks/useAuthContext";
+import useAuthContext from "../../hooks/useAuthContext";
  // Import your auth hook
 
 const Navbar = ({ sidebarOpen }) => {
