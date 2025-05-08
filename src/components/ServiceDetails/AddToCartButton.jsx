@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaShoppingCart, FaCheck } from "react-icons/fa";
-import useCartContext from "../../hooks/useCartContext";
+import useCartContext from "../../Hooks/useCartContext";
 
 const AddToCartButton = ({ service }) => {
   const [isAdding, setIsAdding] = useState(false);
