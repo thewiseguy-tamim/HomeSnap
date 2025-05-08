@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import AppRoutes from './routes/AppRoutes.jsx'
-import { AuthProvider } from './Context/AuthContext.jsx'
-import { CartProvider } from './Context/CartContext.jsx'
+import { AuthProvider } from './context/AuthContext'
+import { CartProvider } from './context/CartContext'
 
 
 createRoot(document.getElementById('root')).render(
